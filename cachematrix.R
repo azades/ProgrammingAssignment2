@@ -1,4 +1,6 @@
-## These two functions “cacheSolve” and “makeCacheMatrix” calculate the Inverse of a matrix and cache it in order to not computed repeatedly.
+## These two functions “cacheSolve” and “makeCacheMatrix”
+## calculate the Inverse of a matrix and cache it in order to
+## not computed repeatedly.
 
 ## makeCacheMatrix create and return a new object that can cache its inverse.
 ## makeCacheMatrix does following steps:
@@ -22,7 +24,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## The “cacheSolve” function checks if the inverse has been computed. If there is, it gets the result and skips the computation again. If there is not, it computes the inverse, sets the value in the cache.
+## The “cacheSolve” function checks if the inverse has been computed.
+## If there is, it gets the result and skips the computation again.
+## If there is not, it computes the inverse, sets the value in the cache.
 
 cacheSolve <- function(x=matrix(), ...) {
     inverse <- x$getInverse()
